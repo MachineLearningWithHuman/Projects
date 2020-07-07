@@ -22,3 +22,46 @@
 <li>use np.random.randn(shape)*initializer</li>
 <li><a href="https://www.wandb.com/articles/the-effects-of-weight-initialization-on-neural-nets#:~:text=Different%20weight%20initialization%20schemes&text=Weights%20initialized%20with%20values%20sampled,distribution%20with%20a%20careful%20tweak">how weight initializer affects accuracy</a></li>
 <li>gradient checking to see your learning</li>
+<li>gradient decent doesnt work with dropout</li>
+<h2>Optimization Techniques</h2>
+<li>mini batches: make batches of some value shuffle the data and do backprop</li>
+<li>batch geadient: smooth mini batch:noisy </li>
+<li>if m = 1 stochastic gradient descent,every example is a mini batch,extreme case</li>
+<li>batch will take large step to converge , stochastic will be noisy never gonna converg occolate in between </li>
+<li>mini batches:noise can  be avoided using smaller learning rate</li>
+<li>mini batches must be smaller than memory size best:64,128,256,512</li>
+<li>exponential avgrage: less memory </li>
+<li>bias correction: initial days prediction will be inaccurate due to less value</li>
+<li>to solve it divide by 1-B^t</li>
+<li>gradient decent with momentum: if you see you don't need vertical gradient you need horizontal gradientto converg</li>
+<li><a href="https://www.coursera.org/learn/deep-neural-network/lecture/BhJlm/rmsprop">see rms prop here</a></li>
+<li>adam is rmsprop + momentum</li>
+<li>learning rate decay: minibatch case</li>
+<li>learning rate: learning rate *(1/(1+epoch*decay rate))</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
