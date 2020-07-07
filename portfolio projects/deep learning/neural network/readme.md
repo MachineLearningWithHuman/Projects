@@ -24,6 +24,22 @@
 <li>visit the vectorization demo.ipython</li>
 <h2>Implementation of Logistic Regression</h2>
 <li>visit logistic_scratch.ipython</li>
+<h2>Activation Function</h2>
+<li>ReLu:max(0,x)</li>
+<li>sigmoid:(0,1)</li>
+<li>tanh(-1,1)</li>
+<li>required to introduce non linearity</li>
+<li>if your output function is binary choose sigmoid </li>
+<li>for other cases use relu </li>
+<li>sigmoid: smooth,binary,clear but vanishing gradient and computation is too expensive</li>
+<li>tanh: zero centered</li>
+<li>ReLu: computetion effective , dying relu problem</li>
+<li>swish: Swish is a new, self-gated activation function discovered by researchers at Google.</li>
+<li>learn more here <a href="https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/">here</a></li>
+<li>derivative of sigmoid(a) is a(1-a)</li>
+<li>derivative of tanh(a) is 1-a^2</li>
+<li>for implementation of neural net from scratch use planar data </li>
+
 
 
 
