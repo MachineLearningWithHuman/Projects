@@ -39,6 +39,10 @@
 <li>derivative of sigmoid(a) is a(1-a)</li>
 <li>derivative of tanh(a) is 1-a^2</li>
 <li>for implementation of neural net from scratch use planar data </li>
+<li>verify my certificate <a href="https://www.coursera.org/account/accomplishments/certificate/9JK3GSLS8MDA">here</a></li>
+<li>Now just add layers into it to make it deep neural network</li>
+<li>two other python notrebooks also provides for deep neural network</li>
+<h1>Congratulatons</h1>
 
 
 
