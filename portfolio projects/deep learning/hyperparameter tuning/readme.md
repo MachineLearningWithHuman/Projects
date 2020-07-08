@@ -38,13 +38,24 @@
 <li>adam is rmsprop + momentum</li>
 <li>learning rate decay: minibatch case</li>
 <li>learning rate: learning rate *(1/(1+epoch*decay rate))</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>difference between local optima and saddle point is important to understand</li>
+<li>In high dimensional places saddle point is much more obvious then local optima</li>
+<li>problem of plateaus : low learning </li>
+<h2>Hyperparameter tuning</h2>
+<li>choose random point for hyperparameter tuning</li>
+<li>go coarse to fine</li>
+<li>appropiate scale for hyperparameter tuning</li>
+<li>for exponential hyperparameter tuning(weight of beta):select uniformly random value</li>
+<li>babysit one model : pandas model</li>
+<li>many model in parallel : caviar model</li>
+<li>normalize input to increse speed </li>
+<li>batch normalization: normalization of activation</li>
+<li>for mini batch it is the mean and variance of subset example</li>
+<li>in batch normalization no need of bias</li>
+<li>covariance shift means getting all into z value in case of normalization</li>
+<li>it has some regularization effects</li>
+<li>for test set use some value zeta to avoid zero divide error</li>
+
 
 
 
