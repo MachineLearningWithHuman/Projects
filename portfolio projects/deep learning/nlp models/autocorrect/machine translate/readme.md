@@ -5,7 +5,7 @@
 <li> so given input x which is my english language it tries to predict a bunch of french sentences and we are gonna use argmax to pick the maximum probable function </li>
 <li>beam search is the algorithm</li>
 <li>Why not greeedy search? because it will result in a less optimal sentence/prediction</li>
-<h2>Beam search</b2>
+<h2>Beam search</h2>
 <li>beam considers multiple output for probability</li>
 <li>parametric: b which is width of beam</li>
 <li>in second word selection math is p(y1,y2|x)=p(y1|x)*p(y2|x,y1)</li>
@@ -22,4 +22,4 @@
 <li>attention models give attention to specific peice of informations </li>
 <h2>Speech Recognisions</h2>
 <li>ctc cost for speech recognition</li>
-<li>trigger word recognition: before trigger word make everything 0</li>
+<li>trigger word recognition: before trigger word make everything 0</li>    
