@@ -25,4 +25,6 @@
 <li>Assumptions: independent features, relative frequency of data</li>
 <h2>Manipulation of words in vector space</h2>
 <li>it contains stuff related to pca,embedding,distance</li>
-
+<h1>Certificates</h1>
+please validate my certificates
+<li> <a href="https://www.coursera.org/account/accomplishments/records/MM3FDJPPVZ3Z">NLP in tensorflow</a></li>
