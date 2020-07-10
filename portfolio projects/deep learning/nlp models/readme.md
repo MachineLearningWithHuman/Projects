@@ -23,3 +23,6 @@
 <li>sum for the best result</li>
 <li> if value is greater than 0 it is a positive sentiment score</li>
 <li>Assumptions: independent features, relative frequency of data</li>
+<h2>Manipulation of words in vector space</h2>
+<li>it contains stuff related to pca,embedding,distance</li>
+
