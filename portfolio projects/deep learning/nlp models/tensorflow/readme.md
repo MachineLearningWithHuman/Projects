@@ -37,3 +37,4 @@
 <li>Conv1D overfitting case(loss)</li>
 <img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/RNN%20archetecture/images/conv1d1.png" alt="loss" width="1000" height="600">
 <h2>Poetry Generation Using NLP</h2>
+<li>use same method as a supervised learning approach</li>
