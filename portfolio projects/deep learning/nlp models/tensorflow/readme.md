@@ -24,4 +24,6 @@
 <img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/sarcasm/sarcasm.png" alt="t-sne visuals" width="1000" height="600">
 <li> for bbc results will look like this </li>
 <img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/bbc/bbc.png" alt="t-sne visuals" width="1000" height="600">
+<li> for yelp results will look like this </li>
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/yelp/yelp.png" alt="t-sne visuals" width="1000" height="600">
 
