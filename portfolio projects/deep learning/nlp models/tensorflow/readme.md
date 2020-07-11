@@ -19,4 +19,4 @@
 <li> Start with a dataset in tfds then do it with your custom dataset </li>
 <li> I have done it using imdb and yelp data then did it with custom sarcasm data and bbc review</li>
 <li> for imdb results will look like this </li>
-<img src="tensorflow/imdb_visualization/imdb.png" alt="t-sne visuals" width="400" height="200">
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/imdb_visualization/imdb.png" alt="t-sne visuals" width="400" height="200">
