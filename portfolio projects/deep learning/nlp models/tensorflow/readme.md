@@ -26,4 +26,14 @@
 <img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/bbc/bbc.png" alt="t-sne visuals" width="1000" height="600">
 <li> for yelp results will look like this </li>
 <img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/yelp/yelp.png" alt="t-sne visuals" width="1000" height="600">
-
+<li>Next we are gonna use different RNN architecture to improve models performance </li>
+<li> I am sharing some of the results I got </li>
+<li>Bi directional GRU overfitting case(Accuracy)</li>
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/RNN%20archetecture/images/1.png" alt="accuracy" width="1000" height="600">
+<li>Bi directional GRU overfitting case(loss)</li>
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/RNN%20archetecture/images/bgru.png" alt="loss" width="1000" height="600">
+<li>Conv1D overfitting case(Accuracy)</li>
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/RNN%20archetecture/images/conv1d.png" alt="accuracy" width="1000" height="600">
+<li>Conv1D overfitting case(loss)</li>
+<img src="https://github.com/MachineLearningWithHuman/Projects/blob/master/portfolio%20projects/deep%20learning/nlp%20models/tensorflow/RNN%20archetecture/images/conv1d1.png" alt="loss" width="1000" height="600">
+<h2>Poetry Generation Using NLP</h2>
