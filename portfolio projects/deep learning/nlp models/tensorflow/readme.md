@@ -9,3 +9,14 @@
 <li>tf.keras.preprocessing.sequence import pad_sequences </li>
 <li> defalut sequences in front , use padding = "post" and truncating = "post"</li>
 <li> And that is how you will do tokenization</li>
+<h2>Word Embedding and binary classification</h2>
+<li>You have to define vocab size and embedding dimension so it is parametric being dimentions need to be learn</li>
+<li>after preprocessing we need one function to reverse index into word > subword text encoder</li>
+<li>then we will define our model</li>
+<li>use sequential > embedding > flat > dense > output structure </li>
+<li> model.layers[0] will give you weights of embedding layer</li>
+<li>download and visualize it on projector website of tensorflow</li>
+<li> Start with a dataset in tfds then do it with your custom dataset </li>
+<li> I have done it using imdb and yelp data then did it with custom sarcasm data and bbc review</li>
+<li> for imdb results will look like this </li>
+<img src="tensorflow/imdb_visualization/imdb.png" alt="t-sne visuals" width="400" height="200">
