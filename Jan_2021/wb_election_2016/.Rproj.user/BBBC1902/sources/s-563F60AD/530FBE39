@@ -1,0 +1,32 @@
+{
+    "id": "530FBE39",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1611506239045.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "Performance_of_women_Candidates",
+        "caption": "Performance_of_women_Candidates",
+        "totalObservations": 193,
+        "displayedObservations": 193,
+        "variables": 12,
+        "cacheKey": "5BB20E42",
+        "object": "Performance_of_women_Candidates",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Performance_of_women_Candidates&cache_key=5BB20E42&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1928762175208,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1611506239045,
+    "read_only": false,
+    "read_only_alternatives": []
+}
