@@ -173,6 +173,7 @@ fig <- fig %>% layout(title = "Result of Jadavpur Constituency",
 
 fig
 
+#jadavpur pie
 fig <- plot_ly(jadavpur, labels = ~`Party Name`, values = ~`Total Valid Votes`, type = 'pie')
 fig <- fig %>% layout(title = "Result of Jadavpur Constituency",
                       xaxis = list(title = "Party Name"),
@@ -404,4 +405,135 @@ fig <- fig %>% layout(title="Votes Gained in strong SUCI places")
 fig
 
 #st seats
-st <- 
+st <- Detailed_Results %>% filter(`Candidate Category`=="ST")
+
+#unique seats
+length(unique(st$`Constituency Name`))
+
+df_party <- st %>% group_by(`Party Name`) %>% summarise(total_vote=sum(`Total Valid Votes`),`Number of constituency`=n())
+
+#visualize
+datatable(df_party)
+
+#filter based on atleast number of constituency >=5
+
+df_party <- df_party %>% filter(`Number of constituency`>=5)
+datatable(df_party)
+
+#strong st parties
+fig <- plot_ly(df_party, x = ~`Party Name`, y = ~total_vote, type = 'bar', color = ~`Party Name`)
+fig <- fig %>% layout(title = "Result of ST majority Votes",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+fig <- plot_ly(df_party, labels = ~`Party Name`, values = ~total_vote, type = 'pie')
+fig <- fig %>% layout(title = "Result of ST majority Votes",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+
+
+#what happened in general votes
+
+gen <- Detailed_Results %>% filter(`Candidate Category`=="GEN")
+
+length(unique(gen$`Constituency Name`))
+
+gen_party <- gen %>% group_by(`Party Name`) %>% summarise(`Number Of Constituency`=n(),`Total Vote`=sum(`Total Valid Votes`))
+
+#filter
+gen_party <- gen_party %>% filter(`Total Vote`>=500000 & `Number Of Constituency`>=10)
+
+datatable(gen_party)
+
+fig <- plot_ly(gen_party, labels = ~`Party Name`, values = ~`Total Vote`, type = 'pie')
+fig <- fig %>% layout(title = "Result of General majority Votes(atleast 5lakh votes)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+#filter
+sc <- Detailed_Results %>% filter(`Candidate Category`=="SC")
+sc_party <- sc %>% group_by(`Party Name`) %>% summarise(`Number Of Constituency`=n(),`Total Vote`=sum(`Total Valid Votes`))
+sc_party <- sc_party %>% filter(`Total Vote`>=200000)
+
+datatable(sc_party)
+
+fig <- plot_ly(sc_party, labels = ~`Party Name`, values = ~`Total Vote`, type = 'pie')
+fig <- fig %>% layout(title = "Result of SC majority Votes(atleast 2lakh votes)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+#filter
+st <- Detailed_Results %>% filter(`Candidate Category`=="ST")
+st_party <- st %>% group_by(`Party Name`) %>% summarise(`Number Of Constituency`=n(),`Total Vote`=sum(`Total Valid Votes`))
+st_party <- st_party %>% filter(`Total Vote`>=100000)
+
+datatable(st_party)
+
+fig <- plot_ly(st_party, labels = ~`Party Name`, values = ~`Total Vote`, type = 'pie')
+fig <- fig %>% layout(title = "Result of ST majority Votes(atleast 1lakh votes)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+
+#partywise vote 
+
+party <- Detailed_Results %>% group_by(`Party Name`) %>% summarise(`Number Of Constituency`=n(),`Total Vote`=sum(`Total Valid Votes`),`Max vote`=max(`Total Valid Votes`),`Min Votes`=min(`Total Valid Votes`))
+
+filter_party <- party %>% filter(`Total Vote`>500000)
+
+fig <- plot_ly(filter_party, labels = ~`Party Name`, values = ~`Total Vote`, type = 'pie')
+fig <- fig %>% layout(title = "Result of WB Votes distribution(atleast 5lakh votes)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+filter_seat <- party %>% filter(`Number Of Constituency`>10 & `Party Name`!="IND" & `Party Name`!="NOTA") 
+  
+
+fig <- plot_ly(filter_seat, x = ~`Party Name`, y = ~`Number Of Constituency`, type = 'bar', color = ~`Party Name`)
+fig <- fig %>% layout(title = "Number of seat contested by parties",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title ="seat contested"))
+
+fig
+
+
+#simple comparison
+filter_seat_50 <- filter_seat %>% filter(`Number Of Constituency`>50)
+fig <- plot_ly(filter_seat_50, x = ~`Party Name`, y = ~`Number Of Constituency`, type = 'bar', color = ~`Party Name`)
+fig <- fig %>% layout(title = "Number of seat contested by parties(all greater than 50 seats)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title ="seat contested"))
+
+fig
+
+datatable(filter_seat_50)
+fig <- plot_ly(filter_seat_50, x = ~`Party Name`, y = ~`Total Vote`, type = 'bar', color = ~`Party Name`)
+fig <- fig %>% layout(title = "Number of Votes achieved by parties(all greater than 50 seats)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title ="Votes"))
+
+fig
+
+fig <- plot_ly(filter_seat_50, labels = ~`Party Name`, values = ~`Total Vote`, type = 'pie')
+fig <- fig %>% layout(title = "Result of WB Votes distribution(atleast 50seats votes)",
+                      xaxis = list(title = "Party Name"),
+                      yaxis = list(title = "VOtes gain"))
+
+fig
+
+
+
+
